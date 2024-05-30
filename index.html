@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ondas 4x4</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>ONDAS 4x4</h1>
+        <nav>
+            <a href="https://instagram.com/ondas4x4" target="_blank" id="instagramLink">Instagram</a>
+            <a href="https://youtube.com/yourstation" target="_blank" id="youtubeLink">YouTube</a>
+        </nav>
+    </header>
+    <main>
+        <section class="player">
+<div style = "bottom: 0;display: flex;height: 110px;left: 0;position: fixed;right: 0;width: 100%;z-index: 1500;overflow: hidden;" ><iframe name="contenedorPlayer" class="cuadroBordeado" allow="autoplay" width="100%" height="110px" marginwidth=0 marginheight=0 hspace=0 vspace=0 frameborder=0 scrolling=no  src="https://cp.usastreams.com/pr2g/APPlayerRadioHTML5.aspx?stream=https://stream.zeno.fm/qlcihi4wkgztv&fondo=05&formato=mpeg&color=14&titulo=2&autoStart=1&vol=5&tipo=13&nombre=Ondas+4x4&imagen=https://cp.usastreams.com/playerHTML5/img/cover.png"></iframe></div>
+        </section>
+        <section class="now-playing">
+            <h2>Ahora mismo sonando</h2>
+            <p id="currentTrack">Lo mejor de la zona...</p>
+        </section>
+        <section class="upcoming-shows">
+            <h2>Próximamente</h2>
+            <ul id="upcomingList"></ul>
+        </section>
+        <section class="app-promotion">
+            <h2>Descarga nuestra app</h2>
+            <p>Descarga la app en el play store para mantenerte informado.</p>
+            <a href="https://play.google.com/store/apps/details?id=your.app.id" target="_blank"><img src="playstore.png" alt="Available on Google Play"></a>
+        </section>
+        <section class="social-media-feed">
+            <h2>Visita nuestras redes sociales</h2>
+            <div id="socialFeed"></div>
+        </section>
+        
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

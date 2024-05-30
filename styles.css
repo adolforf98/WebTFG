@@ -1,0 +1,85 @@
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: #202020;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ff0;
+}
+
+.player audio {
+    max-width: 600px;
+    width: 100%;
+}
+
+.now-playing, .upcoming-shows, .social-media-feed {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.now-playing h2, .upcoming-shows h2, .social-media-feed h2 {
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+
+.app-promotion {
+    text-align: center;
+    background-color: #1a73e8;  /* A Google Play blue color theme */
+    color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.app-promotion h2 {
+    margin-bottom: 15px;
+}
+
+.app-promotion p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.app-promotion a {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.app-promotion a:hover {
+    transform: scale(1.05);
+}
+
+.app-promotion img {
+    height: 40px;
+    width: auto;
+}
