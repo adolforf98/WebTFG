@@ -1,9 +1,9 @@
-document.getElementById('audioPlayer').addEventListener('play', function () {
-    updateNowPlaying();
+document.addEventListener('DOMContentLoaded', function () {
+    loadUpcomingShows();
+    fetchSocialMediaPosts();
 });
 
 function updateNowPlaying() {
-    // Simulate fetching current track info from an API
     document.getElementById('currentTrack').textContent = 'Current Live Stream';
 }
 
@@ -18,14 +18,7 @@ function loadUpcomingShows() {
     });
 }
 
-// Simulated function to fetch and display social media posts
 function fetchSocialMediaPosts() {
     const feed = document.getElementById('socialFeed');
     feed.innerHTML = '<p>New photos from our latest event on Instagram!</p>';
 }
-
-// Load upcoming shows and social media posts on page load
-window.onload = function() {
-    loadUpcomingShows();
-    fetchSocialMediaPosts();
-};
